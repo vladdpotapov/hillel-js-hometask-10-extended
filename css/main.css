@@ -1,0 +1,108 @@
+/* GENERAL */
+body {
+    background-color: #585858;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+}
+
+/* CATEGORIES */
+.categories {
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #ffffff;
+}
+
+.categories__item {
+    cursor: pointer;
+    padding: 5px 0;
+    color: #ffffff;
+}
+
+.categories__item:hover {
+    background-color: #1f1f1f;
+}
+
+/* GOODS */
+.goods {
+    width: 45%;
+    border-right: 1px solid #ffffff;
+}
+
+.goodsItem {
+    padding: 5px 10px;
+    text-align: center;
+    color: #ff9100;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.goodsItem:hover {
+    background-color: #1f1f1f;
+}
+
+/* DATA */
+.data {
+   width: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.goodsDescription {
+    max-width: 500px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 20px;
+}
+
+#form-button {
+    margin-top: 25px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9900;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#form-button:hover {
+    background-color: #ffee00;
+}
+
+/* FORM */
+.form__container {
+    display: none;
+}
+
+.display--block {
+    display: block;
+    padding: 15px;
+    max-width: 270px;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #9e9e9e;
+}
+
+.mainForm__text {
+    margin-top: 10px;
+}
+
+.button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+}

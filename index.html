@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task #10: Task 02</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="categories">
+                <ul class="categories__list">
+                    <li class="categories__item">Laptops</li>
+                    <li class="categories__item">Phones </li>
+                    <li class="categories__item">Players</li>
+                </ul>
+            </div>
+            <div class="goods">
+
+            </div>
+            <div class="data">
+                
+            </div>
+        </div>
+
+        <div class="form__container" id="form__container">
+            <form class="form" name="mainForm">
+                <p class="mainForm__text">
+                    * Your first name:
+                    <input type="text" name="firstName" placeholder="Enter your first name" id="fName">
+                </p>
+                
+                <p class="mainForm__text">
+                    * Your second name:
+                <input type="text" name="secondName" placeholder="Enter your second name" id="sName">
+                </p>
+
+                <p class="mainForm__text">
+                    * Your city:
+                </p>
+                <select name="city" id="city">
+                    <option value="0">Odessa</option>
+                    <option value="1">New-York</option>
+                    <option value="2">Paris</option>
+                    <option value="3">Milan</option>
+                    <option value="4">London</option>
+                </select>
+
+                <p class="mainForm__text">
+                    Post Department:
+                </p>
+                <select name="post" id="post">
+                    <option value="0">Department #01</option>
+                    <option value="1">Department #02</option>
+                    <option value="2">Department #03</option>
+                    <option value="3">Department #04</option>
+                    <option value="4">Department #05</option>
+                </select>
+                
+                <p class="mainForm__text">
+                    Payment:
+                </p>
+                <input type="radio" name="payment" value="C">Cash
+                <input type="radio" name="payment" value="CC">Credit Card
+
+                <p class="mainForm__text">
+                    * Your address:
+                </p>
+                <textarea name="address" cols="30" rows="5" placeholder="Enter your address" id="addr"></textarea>
+
+                <p class="mainForm__text">
+                    * Your comment:
+                </p>
+                <textarea name="comment" cols="30" rows="5" placeholder="Enter your comment" id="comment"></textarea>
+
+                <p class="mainForm__text">
+                    * Quantity of the peoduct:
+                <input type="text" name="quantity" placeholder="Enter quantity of the product" id="quantity">
+                </p>
+
+                <input type="button" name="saveButton" value="Save Data" class="button">
+            </form>
+        </div>
+    </section>
+    <script src="js/form.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
