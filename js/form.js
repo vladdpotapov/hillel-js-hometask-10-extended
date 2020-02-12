@@ -41,10 +41,10 @@ saveButton.addEventListener('click', function() {
     User.Comment = userComment;
 
     if (!inputFirstName.value || !inputSecondName.value || !inputAddress.value || !inputQuantity) {
-        inputFirstName.style.border = '2px solid orange';
-        inputSecondName.style.border = '2px solid orange';
-        inputAddress.style.border = '2px solid orange';
-        inputQuantity.style.border = '2px solid orange';
+        inputFirstName.style.border = '4px solid yellow';
+        inputSecondName.style.border = '4px solid yellow';
+        inputAddress.style.border = '4px solid yellow';
+        inputQuantity.style.border = '4px solid yellow';
         return false;
     }
 
