@@ -55,6 +55,7 @@ saveButton.addEventListener('click', function() {
     addClientForm();
 });
 
+// FUNCTIONS
 function getUserPayment() {
     let checkedPayment = form.elements.payment.value;
     let payment = paymentMatches[checkedPayment];
