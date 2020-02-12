@@ -1,3 +1,5 @@
+'use strict';
+
 // VARIABLES
 const sliderImage       = getSliderElementById('slider__image');
 const sliderButtonPrev  = getSliderElementById('slider__button-prev');

@@ -1,3 +1,5 @@
+'use strict';
+
 const paymentMatches = {
     'C': 'Cash',
     'CC': 'Credit Card',

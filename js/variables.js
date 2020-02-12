@@ -1,3 +1,5 @@
+'use strict';
+
 const products = {
     Honda: [    //Laptops
         { name: 'CBR 1000 RR', price: 15000, desc: 'Some product description'},
