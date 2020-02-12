@@ -1,3 +1,9 @@
+function clearInfo() {
+    goodsBox.textContent = '';
+    dataBox.textContent = '';
+    dataForm.classList.remove('display--block');
+}
+
 function addToPage (object) {
     for (let i = 0; i < object.length; i++) {
         goodsItem = document.createElement('div');
@@ -14,17 +20,21 @@ function addGoodsDescription (object) {
     goodsDescription.setAttribute('class', 'goodsDescription');
     goodsDescription.innerHTML = `<div>Price: ${object.price} <br /> Desc: ${object.desc}</div>`;
 
-    formButton = document.createElement('button');
-    formButton.id = 'form-button';
-    formButton.innerText = 'Buy';
-    formButton.onclick = () => addForm();
-
-    goodsDescription.append(formButton);
-    dataBox.append(goodsDescription);
+    createButtonInGoodsDescription();
 
     dataForm.classList.remove('display--block');
 }
   
+function createButtonInGoodsDescription() {
+    formButton = document.createElement('button');
+    formButton.id = 'form-button';
+    formButton.innerText = 'Buy';
+    formButton.onclick = () => addForm();
+    goodsDescription.append(formButton);
+    dataBox.append(goodsDescription);
+}
+
 function addForm() {
     dataForm.classList.add('display--block');
 }
+

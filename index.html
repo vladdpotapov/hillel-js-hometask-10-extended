@@ -4,17 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Task #10: Task 02</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <section class="main">
+    <header class="header">
+        <div class="header__topbar">
+            <div class="content-frame--flex">
+                <div class="logo-box">
+                    <p class="logo">Lo<span class="logo__span">Go</span></p>
+                </div>
+                <div class="header__contacts">
+                    <p class="contacts__address">Ukraine, Odessa | 52 Whatever Street</p>
+                    <p class="contacts__telephone-box">
+                        <a href="tel:+38 063 555 666 77" class="contacts__telephone">+38 063 555 666 77</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content-frame--flex">
+            <div class="slider">
+                <div class="slider__side">
+                    <button class="slider__button" id="slider__button-prev"><</button>
+                </div>
+                <div class="slider__central">
+                    <img src="img/01.jpg" alt="picture" class="slider__image" id="slider__image">
+                </div>
+                <div class="slider__side">
+                    <button class="slider__button" id="slider__button-next">></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <nav class="navigation">
+            <div class="content-frame--flex">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">Link</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">Link</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">Link</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">Link</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main" id="main">
         <div class="container">
             <div class="categories">
                 <ul class="categories__list">
-                    <li class="categories__item">Laptops</li>
-                    <li class="categories__item">Phones </li>
-                    <li class="categories__item">Players</li>
+                    <li class="categories__item">Honda</li>     <!--Laptops-->
+                    <li class="categories__item">Yamaha </li>   <!--Phones-->
+                    <li class="categories__item">Kawasaki</li>  <!--Players-->
                 </ul>
             </div>
             <div class="goods">
@@ -29,18 +79,18 @@
             <form class="form" name="mainForm">
                 <p class="mainForm__text">
                     * Your first name:
-                    <input type="text" name="firstName" placeholder="Enter your first name" id="fName">
+                    <input type="text" name="firstName" placeholder="Enter your first name" id="fName" class="form-input">
                 </p>
                 
                 <p class="mainForm__text">
                     * Your second name:
-                <input type="text" name="secondName" placeholder="Enter your second name" id="sName">
+                    <input type="text" name="secondName" placeholder="Enter your second name" id="sName" class="form-input">
                 </p>
 
                 <p class="mainForm__text">
-                    * Your city:
+                    Your city:
                 </p>
-                <select name="city" id="city">
+                <select name="city" id="city" class="form-input">
                     <option value="0">Odessa</option>
                     <option value="1">New-York</option>
                     <option value="2">Paris</option>
@@ -51,7 +101,7 @@
                 <p class="mainForm__text">
                     Post Department:
                 </p>
-                <select name="post" id="post">
+                <select name="post" id="post" class="form-input">
                     <option value="0">Department #01</option>
                     <option value="1">Department #02</option>
                     <option value="2">Department #03</option>
@@ -68,22 +118,89 @@
                 <p class="mainForm__text">
                     * Your address:
                 </p>
-                <textarea name="address" cols="30" rows="5" placeholder="Enter your address" id="addr"></textarea>
+                <textarea name="address" cols="30" rows="5" placeholder="Enter your address" id="addr" class="form-input"></textarea>
 
                 <p class="mainForm__text">
-                    * Your comment:
+                    Your comment:
                 </p>
-                <textarea name="comment" cols="30" rows="5" placeholder="Enter your comment" id="comment"></textarea>
+                <textarea name="comment" cols="30" rows="5" placeholder="Enter your comment" id="comment" class="form-input"></textarea>
 
                 <p class="mainForm__text">
-                    * Quantity of the peoduct:
-                <input type="text" name="quantity" placeholder="Enter quantity of the product" id="quantity">
+                    * Quantity of the product:
+                    <input type="text" name="quantity" placeholder="Enter quantity of the product" id="quantity" class="form-input">
                 </p>
 
-                <input type="button" name="saveButton" value="Save Data" class="button">
+                <input type="button" name="saveButton" value="Confirm Order" class="button">
             </form>
         </div>
     </section>
+    <footer class="footer">
+        <div class="content-frame--footer">
+            <div class="footer__info-box">
+                <ul class="info__list">
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__info-box">
+                <ul class="info__list">
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__info-box">
+                <ul class="info__list">
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                    <li class="info__item">
+                        <a href="" class="info__link">Some info links</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyrights">
+            <p class="footer__rights">
+                All Rights Reserved 2020
+            </p>
+        </div>
+    </footer>
+    <script src="js/slider.js"></script>
     <script src="js/form.js"></script>
     <script src="js/variables.js"></script>
     <script src="js/functions.js"></script>

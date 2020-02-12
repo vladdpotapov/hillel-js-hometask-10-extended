@@ -1,10 +1,8 @@
-categoriesList.addEventListener('mousedown', function() {
-    goodsBox.textContent = '';
-    dataBox.textContent = '';
-    dataForm.classList.remove('display--block');
-});
+'use strict';
 
-categoriesList.addEventListener('mouseup', function (event) {
+categoriesList.addEventListener('click', function (event) {
+    clearInfo();
+
     let currentCategory = event.target.innerText;
     let currentProduct;
     for (let key in products) {
