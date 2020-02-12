@@ -17,27 +17,29 @@ function slideNext() {
     sliderImage.src = sliderImagesArray[sliderCurrentImageIndex];
     sliderCurrentImageIndex++;
     sliderImage.src = sliderImagesArray[sliderCurrentImageIndex];
+    sliderButtonPrev.disabled = false;
 }
 
 function slidePrev() {
     sliderImage.src = sliderImagesArray[sliderCurrentImageIndex + 1];
     sliderCurrentImageIndex--;
     sliderImage.src = sliderImagesArray[sliderCurrentImageIndex];
+    sliderButtonNext.disabled = false;
 }
 
 function sliderButtonsDisableCheck() {
     if ((sliderCurrentImageIndex) >= (sliderImagesArray.length - 1)) {
         sliderButtonNext.disabled = true;
-        sliderButtonPrev.disabled = false;
     }
 
     if (sliderCurrentImageIndex === 0) {
-        sliderButtonNext.disabled = false;
         sliderButtonPrev.disabled = true;
     }
 }
 
 // EXECUTION
+sliderButtonPrev.disabled = true;
+
 sliderButtonNext.addEventListener('click', () => {
     slideNext();
     sliderButtonsDisableCheck();
