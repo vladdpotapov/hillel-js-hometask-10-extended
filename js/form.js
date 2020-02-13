@@ -18,6 +18,7 @@ const inputQuantity = document.getElementById('quantity');
 
 const saveButton = document.querySelector('input[name="saveButton"]');
 saveButton.addEventListener('click', function() {
+
     const userFirstName = form.elements.firstName.value;    
     User.Name = userFirstName;
 
@@ -42,12 +43,8 @@ saveButton.addEventListener('click', function() {
     const userComment = form.elements.comment.value;
     User.Comment = userComment;
 
-    if (!inputFirstName.value || !inputSecondName.value || !inputAddress.value || !inputQuantity) {
-        inputFirstName.style.border = '4px solid yellow';
-        inputSecondName.style.border = '4px solid yellow';
-        inputAddress.style.border = '4px solid yellow';
-        inputQuantity.style.border = '4px solid yellow';
-        return false;
+    if (!validateFormInputs()) {
+        return;
     }
 
     form.remove();
@@ -79,3 +76,16 @@ function addClientForm() {
     formContainer.prepend(box);  
     box.innerHTML = showData(User);
 }
+
+function validateFormInputs() {
+    if (!inputFirstName.value || !inputSecondName.value || !inputAddress.value || !inputQuantity) {
+        inputFirstName.style.border = '4px solid yellow';
+        inputSecondName.style.border = '4px solid yellow';
+        inputAddress.style.border = '4px solid yellow';
+        inputQuantity.style.border = '4px solid yellow';
+        return false;
+    } else {
+        return true;
+    } 
+}
+
